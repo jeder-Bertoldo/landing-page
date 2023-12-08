@@ -45,7 +45,7 @@ body{
 }
 .navigatio ul li a{
     color: var(--red);
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     transition: all 0.5s;
 }
@@ -73,8 +73,8 @@ body{
 .navigatio ul li a:hover{
     text-decoration: none;
     transition: 0.3s;
-    font-size: 30px;
-    color: #d63a25;
+    font-size: 28px;
+    color: #12b9d0;
 }
 
 .home{
@@ -153,6 +153,13 @@ body{
 .home-img {
     animation: moveImage 4s ease-in-out infinite; /* Duração, transição e repetição */
     /* Outros estilos para posicionar a imagem, se necessário */
+}
+.sobre-h3{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400;
+    height: auto;
+    margin-left: 900px;
 }
 
 
