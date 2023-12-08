@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --red:#d63a25;
+    --white:#fff;
+    --dark:#1e1c2a;
+}
+body{
+    color: var(--dark);
+   background-image: url(./img/v1016-b-09.jpg);
+}
+.navigatio{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    box-shadow: 0 0.2rem 0.5rem #ebe8e8;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.5s;
+    
+   
+}
+.navigatio .logo{
+    color: aliceblue;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.logo span{
+    color: var(--red);
+}
+.navigatio ul{
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+}
+.navigatio ul li a{
+    color: var(--red);
+    font-size: 25px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+.navigatio ul li a:hover{
+    color: var(--red);
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 50px;
+    background-color: var(--dark);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background-color: rgb(255, 0, 0);
+}
+
+.navigatio ul li a:hover{
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 30px;
+    color: #d63a25;
+}
+
+.home{
+    width: 100px;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 10%;
+    margin-left: 20px;
+  
+}
+.home-text{
+     max-width: 37rem;
+    
+}
+.home-text .text-h4{
+    font-size: 1.5rem;
+    color: #d63a25;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: escrever 2s steps(50, end);  
+}
+@keyframes escrever{
+    from {width: 0;}
+    to {width: 100%;}
+   
+}
+.text-h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+    color: aqua;
+}
+.home-text p{
+    margin-bottom: 4rem;
+    color: #fff;
+}
+.home-btn{
+    padding: 15px 50px;
+    background-color: rgb(59, 92, 200);
+    color: var(--white);
+    border-radius: 15px;
+    font-weight: 900;
+    transition: all 0.5s;
+}
+.home-btn:hover{
+    background: rgb(64, 168, 224);
+    transition: 0.3s;
+    font-size: 22px;
+}
+.home-img{
+   /*translate: 700px;*/
+   width: 700px;
+   height: auto;
+  margin-left: 900px;
+  margin-top: -800px;
+
+    
+}
+/* Definindo a animação */
+@keyframes moveImage {
+    0% {
+        transform: translateY(0); /* Começa na posição inicial */
+    }
+    50% {
+        transform: translateY(-80px); /* Move para a direita */
+    }
+    100% {
+        transform: translateY(0); /* Volta para a posição inicial */
+    }
+}
+
+/* Aplicando a animação à imagem */
+.home-img {
+    animation: moveImage 4s ease-in-out infinite; /* Duração, transição e repetição */
+    /* Outros estilos para posicionar a imagem, se necessário */
+}
+
+
