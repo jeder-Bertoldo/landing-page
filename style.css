@@ -15,7 +15,7 @@
 }
 body{
     color: var(--dark);
-   background-image: url(./img/v1016-b-09.jpg);
+ background-color: rgba(216, 220, 220, 0.774);
 }
 .navigatio{
     
@@ -23,7 +23,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 10px 40px;
-    box-shadow: 0 0.2rem 0.5rem #ebe8e8;
+    box-shadow: 0 0.2rem 0.5rem #272525;
     width: 100%;
     background-color: rgba(0, 0, 0, 0);
     transition: all 0.5s;
@@ -31,7 +31,7 @@ body{
    
 }
 .navigatio .logo{
-    color: aliceblue;
+    color: rgba(16, 16, 30, 0.851);
     font-size: 1.7rem;
     font-weight: 600;
 }
@@ -44,7 +44,7 @@ body{
     gap: 10rem;
 }
 .navigatio ul li a{
-    color: var(--red);
+   color: #2d2d2d;
     font-size: 20px;
     font-weight: 600;
     transition: all 0.5s;
@@ -74,7 +74,7 @@ body{
     text-decoration: none;
     transition: 0.3s;
     font-size: 28px;
-    color: #12b9d0;
+    color: #0eb0e2d6;
 }
 
 .home{
@@ -108,11 +108,11 @@ body{
     font-size: 2rem;
     margin-bottom: 1rem;
     line-height: 2rem;
-    color: aqua;
+    color: rgb(16, 204, 147);
 }
 .home-text p{
     margin-bottom: 4rem;
-    color: #fff;
+    color: #2d2d2d;
 }
 .home-btn{
     padding: 15px 50px;
@@ -131,8 +131,8 @@ body{
    /*translate: 700px;*/
    width: 700px;
    height: auto;
-  margin-left: 900px;
-  margin-top: -800px;
+  margin-left: 700px;
+  margin-top: -700px;
 
     
 }
@@ -154,12 +154,67 @@ body{
     animation: moveImage 4s ease-in-out infinite; /* Duração, transição e repetição */
     /* Outros estilos para posicionar a imagem, se necessário */
 }
-.sobre-h3{
-    font-size: 30px;
-    color: #fff;
-    font-weight: 400;
+
+.sobre{
+    width: 100px;
+    height: 100vh;
+    display: grid;
+    justify-content: flex-start;
+    padding: 0px 10%;
+    margin-left: 20px;
+    color: rgb(42, 44, 45);
+   
+}
+.sobre-p{
+    width: 600px;
     height: auto;
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.sobre-h3{
+    font-size: 1.7rem;
+}
+.sobre-img{
     margin-left: 900px;
+    margin-top: -400px;
+}
+.contato{
+    text-align: center;
+    color: #1f2820;
+    font-size: 1.7rem;
+}
+
+.contato img{
+    margin-top: 50px;
+}
+.contato img:hover{
+    transition: 0.4s;
+    transform: scale(1.2);
+}
+.fim{
+    font-size: 1.8rem;
+    color: rgba(69, 2, 60, 0.867);
+    text-align: center;
+    margin-top: 80px;
+   font-weight: bold;
+}
+.natal{
+    text-align: center;
+    font-size: 1.9rem;
+    color: #d63a25;
+    margin-top: 100px;
+    font-weight: bold;
+    animation: animation 1s infinite alternate;
+}
+@keyframes animation{
+0%{
+    transform: scale(1);
+}
+100%{
+    transform: scale(1.2);
+}
 }
 
 
