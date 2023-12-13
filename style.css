@@ -311,6 +311,17 @@ body{
     transform: scale(1.2);
 }
 }
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: tomato;
+    border-radius: 100px;
+}
+
+
+
 
 
 @media (max-width:785px){
