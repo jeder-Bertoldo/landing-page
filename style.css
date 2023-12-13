@@ -15,15 +15,19 @@ transition: background 0.2s linear;
 body.dark {
 background: #292c35;
 }
-body.dark h1, body.dark h2, body.dark h3, body.dark h4,
+body.dark h1, body.dark h2, body.dark h3,
 body.dark p, .nav-menu{
     color: #fff;
+}
+body.dark h1{
+    color: #ea7ccf;
 }
 body.dark .navigatio ul li a{
     color: #ea7ccf;
 }
-
-
+body.dark .logo{
+    color: #28b4ff;
+}
 .checkbox {
 opacity: 0;
 position: absolute;
@@ -87,7 +91,8 @@ color: #f39c12;
 }
 body{
     color: var(--dark);
- background-color: rgba(216, 220, 220, 0.774);
+ background-color: rgb(255, 255, 255);
+ overflow-x: hidden;
 }
 .navigatio{
     
@@ -99,13 +104,26 @@ body{
     width: 100%;
     background-color: rgba(0, 0, 0, 0);
     transition: all 0.5s;
-    
-   
 }
-.navigatio .logo{
+.navigatio img{
+   
+    animation: animation 1s infinite ease-in-out;
+    }
+    @keyframes animation{
+        0%{
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(1.2);
+        }
+        }
+        
+.logo{
+    margin-right: auto;
     color: rgba(16, 16, 30, 0.851);
     font-size: 1.7rem;
     font-weight: 600;
+    animation: animation 1s infinite ease-in-out;
 }
 .logo span{
     color: var(--red);
@@ -187,6 +205,7 @@ body{
     margin-bottom: 4rem;
     color: #2d2d2d;
     width: 80%;
+    font-weight: bold;
   
 }
 .home-btn{
@@ -295,6 +314,10 @@ body{
 
 
 @media (max-width:785px){
+    .body{
+        overflow-x: hidden;
+    }
+
     .navigatio{
         padding: 20px 20px;
     }
@@ -340,28 +363,33 @@ body{
         gap: 5rem;
     }
     .home .text-h4{
-        font-size: 22px;
+        font-size: 30px;
         margin-right: 20px;
+        max-width: 100%;
        
     }
     .home .text-h1{
         font-size: 2.0rem;
         line-height: 3rem;
+        
       
     }
     .home-text p{
-        font-size: 14px;
-       margin-right: 30px;
+        font-size: 25px;
+       margin-right: 50px;
         font-weight: bold;
+        width: 100px;
     }
     .home-img{
-        width: 30%;
-        margin-top: 30px;
-        margin-left: 100px;
+        width: 50%;
+        margin-top: 100px;
+        margin-left: 150px;
+
     }
    .sobre{
     padding: 100px 2%;
     margin-right: auto;
+    
    }
    .sobre-p{
     width: 450px;
@@ -374,10 +402,116 @@ body{
    }
    .contato{
     margin-top: 600px;
+    text-align: center;
    }
-   
-  
 }
+
+
+
+
+/* Estilos para telas menores que 785px */
+@media (max-width: 785px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .navigatio {
+        padding: 20px;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu.ativo .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu.ativo .bar:nth-child(2) {
+        transform: scaleX(0);
+    }
+
+    .menu.ativo .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        flex-direction: column;
+        background-color: rgba(240, 248, 255, 0.743);
+        gap: 10px; /* Ajuste positivo para separação entre os itens */
+        transition: 0.3s;
+        display: none;
+    }
+
+    .nav-menu.ativo {
+        right: 0;
+        display: block;
+    }
+
+    .nav-item {
+        margin: 10px 0; /* Redução da margem para melhor espaçamento em telas menores */
+    }
+
+    /* main */
+    .home {
+        padding: 50px 2%;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .home .text-h4 {
+        font-size: 18px;
+        margin-right: 10px;
+       
+    }
+
+    .home .text-h1 {
+        width: 100%;
+        font-size: 1.5rem;
+        line-height: 2rem;
+       
+    }
+
+    .home-text p {
+        width: 100%;
+        font-size: 12px;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+
+    .home-img {
+        width: 80%;
+        margin-top: 50px;
+        margin-left: 0;
+    }
+
+    .sobre {
+        padding: 0px 1%;
+       margin-top: 100px;
+    }
+
+    .sobre-p {
+        width: 180%;
+        margin-right: 0;
+        margin-top: 10px;
+       margin-left: 20px;
+    }
+
+    .sobre-img {
+        display: none;
+    }
+
+    .contato {
+        margin-top: 50px;
+        text-align: center;
+        margin-top: 200px;
+    }
+}
+
 
 
 
