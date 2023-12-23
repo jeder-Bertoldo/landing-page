@@ -13,7 +13,7 @@ transition: background 0.2s linear;
 }
 
 body.dark {
-background: #292c35;
+background: #3a3d45;
 }
 body.dark h1, body.dark h2, body.dark h3,
 body.dark p, .nav-menu{
@@ -34,7 +34,7 @@ position: absolute;
 }
 
 .label {
-background-color: #111;
+background-color: #1c1b1b;
 border-radius: 50px;
 cursor: pointer;
 display: flex;
